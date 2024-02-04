@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ee42a7a4b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="login.css">
+<script src="login.js"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card1  d-flex flex-column justify-content-center">
+                        <h1>Welcome Back</h1>
+                        <p>You can Sign in to access your existing account</p>
+                        <div align="center">
+                            <button onclick="display('sectionlogin')">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div id="sectionlogin">
+            <div class="card3">
+                <i class="fa-solid fa-arrow-left font1 cls" onclick="display('sectionhome')"></i>
+                <div class="card2 d-md-none pt-5">
+                    <h1 class="h2">Sign In</h1>
+                    <p class="p2">please enter your login information</p>
+                    <form id="loginForm">
+                        <label for="username" class="cls">Username:</label>
+                        <input type="text" class="cls" id="name" name="username" required>
+                        <br>
+                        <label for="password" class="cls">Password:</label>
+                        <input type="password" class="cls" id="password" name="password" required>
+                        <br>
+                        <p class="error-message" id="message"></p>
+                        <br>
+                        <button type="button" class="cls btn" onclick="login()">Login</button>
+                    </form>
+                    <p></p>
+                    <p class="p2">New Here? <a href="#">click here</a> to register</p>
+                    <div class="bg1  d-flex flex-row justify-content-center"><i class="fa-brands fa-google f1 cls"></i> Continue with Google</div> <br>
+                    <div class="bg1  d-flex flex-row justify-content-center"> <i class="fa-brands fa-square-facebook f1 cls"></i> Continue with Facebook</div>
+                </div>
+                <div class="card4 d-none d-md-block pt-5">
+                    <h1 class="h2">Sign In</h1>
+                    <p class="p2">please enter your login information</p>
+                    <form id="login.Form">
+                        <label for="username" class="cls">Username:</label>
+                        <input type="text" class="cls" id=".name" name="username" required>
+                        <br>
+                        <label for="password" class="cls">Password:</label>
+                        <input type="password" class="cls" id=".password" name="password" required>
+                        <br>
+                        <p class="error-message" id=".message"></p>
+                        <br>
+                        <button type="button" class="cls btn" onclick="login1()">Login</button>
+                    </form>
+                    <p class="p2">New Here? <a href="#">click here</a> to register</p>
+                    <div class="bg1  d-flex flex-row justify-content-center"><i class="fa-brands fa-google f1 cls"></i> Continue with Google</div> <br>
+                    <div class="bg1  d-flex flex-row justify-content-center"> <i class="fa-brands fa-square-facebook f1 cls"></i> Continue with Facebook</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
